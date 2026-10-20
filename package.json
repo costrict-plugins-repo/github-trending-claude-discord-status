@@ -1,0 +1,41 @@
+{
+  "name": "claude-discord-status",
+  "version": "0.1.0",
+  "description": "Discord Rich Presence plugin for Claude Code, Claude Desktop, and Cowork",
+  "author": {
+    "name": "Justin Garcia",
+    "url": "https://github.com/QuantumInkDev"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/QuantumInkDev/claude-discord-status.git"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "hooks",
+    ".claude-plugin",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "postinstall": "tsc",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@xhayper/discord-rpc": "^1.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
